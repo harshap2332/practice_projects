@@ -312,6 +312,8 @@ VALUES
 (29, 29, 4, '2024-12-05'),
 (30, 30, 5, '2024-12-10');
 
+select * from salary
+
 select * from attendance
 
 select * from department
@@ -324,4 +326,4 @@ select * from project
 
 select * from projectallocation
 
-select * from salary
+
