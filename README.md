@@ -1,2 +1,2 @@
 # projects
-my data analytics projects
+my data analytics practice projects
