@@ -1,0 +1,51 @@
+-- ■	Marketing Analytics:
+-- ●	Analyse marketing campaign performance by channel (spend, conversions, and conversion rate).
+SELECT channel, SUM(spend) AS total_spend,
+SUM(conversions) AS total_conversions,
+(SUM(conversions) / SUM(clicks)) * 100 AS conversion_rate 
+FROM `appdataanalysis`.`app_data`.`marketing_events` 
+GROUP BY channel;
+
+-- ●	Calculate the Cost Per Acquisition (CPA) for each campaign.
+SELECT marketing_events.campaign_id, 
+marketing_events.spend / marketing_events.conversions AS cpa 
+FROM `appdataanalysis`.`app_data`.`marketing_events` AS marketing_events;
+
+-- ●	Identify which channels are most cost-effective in terms of conversions.
+SELECT channel, SUM(conversions) / SUM(spend) AS conversion_rate
+FROM `appanalysis-447013`.`app_data`.`marketing_events`
+WHERE spend > 0
+GROUP BY channel
+ORDER BY conversion_rate DESC;
+
+
+--■	Product Analytics:
+
+-- ●	Analyse feature adoption rates (how many users engaged with specific features).
+SELECT feature_name, 
+COUNT(DISTINCT user_id) AS adoption_rate 
+FROM `appdataanalysis`.`app_data`.`app_events` 
+GROUP BY feature_name;
+
+-- ●	Calculate daily or weekly active users (DAU/WAU).
+SELECT event_date,
+ COUNT(DISTINCT user_id) AS daily_active_users 
+ FROM `appdataanalysis`.`app_data`.`app_events` 
+ GROUP BY event_date;
+
+-- ●	Perform cohort analysis to track user retention over time.
+SELECT cohort, event_date, 
+COUNT(DISTINCT user_id) AS retained_users 
+FROM ( SELECT user_data.user_id, user_data.age, user_data.gender, user_data.location, user_data.device_type, DATE_TRUNC(app_events.event_date, MONTH) AS cohort, app_events.event_date 
+FROM `appdataanalysis`.`app_data`.`user_data` AS user_data 
+LEFT JOIN `appdataanalysis`.`app_data`.`app_events` AS app_events 
+ON user_data.user_id = app_events.user_id ) 
+GROUP BY cohort, event_date;
+
+-- ●	Analyse average session duration per feature and user location.
+SELECT app_events.feature_name, user_data.location, 
+AVG(app_events.session_duration) AS average_session_duration 
+FROM `appanalysis-447013`.`app_data`.`app_events` AS app_events 
+LEFT JOIN `appanalysis-447013`.`app_data`.`user_data` AS user_data 
+ON app_events.user_id = user_data.user_id 
+GROUP BY app_events.feature_name, user_data.location;

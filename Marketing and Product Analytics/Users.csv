@@ -1,0 +1,101 @@
+user_id,age,gender,location,device_type
+U001,58,Male,United States,Web
+U002,35,Male,France,iOS
+U003,65,Male,Norway,iOS
+U004,55,Female,Canada,iOS
+U005,23,Male,France,Web
+U006,56,Male,Norway,iOS
+U007,63,Other,Norway,Android
+U008,32,Female,Denmark,Android
+U009,18,Male,China,Android
+U010,35,Male,Brazil,Android
+U011,24,Male,Mexico,iOS
+U012,40,Female,Finland,Android
+U013,20,Other,Russia,Web
+U014,25,Female,United Kingdom,Web
+U015,36,Other,Finland,Android
+U016,54,Male,United Kingdom,iOS
+U017,60,Male,South Africa,iOS
+U018,32,Male,Mexico,Android
+U019,47,Other,Italy,iOS
+U020,41,Female,Brazil,Web
+U021,35,Other,United Kingdom,Web
+U022,58,Male,Norway,Web
+U023,33,Male,Russia,Android
+U024,35,Other,Norway,iOS
+U025,61,Female,Canada,iOS
+U026,20,Female,Mexico,Android
+U027,22,Male,Denmark,Web
+U028,38,Male,Netherlands,Android
+U029,59,Female,Germany,Android
+U030,26,Male,Norway,Web
+U031,34,Other,Denmark,Android
+U032,55,Female,Italy,iOS
+U033,26,Other,Netherlands,iOS
+U034,21,Male,Germany,Web
+U035,28,Other,China,Web
+U036,22,Female,Mexico,Web
+U037,47,Other,Japan,Web
+U038,18,Other,Australia,Web
+U039,52,Female,Spain,iOS
+U040,36,Female,India,Android
+U041,18,Other,Japan,Web
+U042,29,Other,Australia,Web
+U043,37,Other,Sweden,Web
+U044,30,Male,Italy,iOS
+U045,52,Other,United States,Web
+U046,38,Female,United States,iOS
+U047,41,Female,France,iOS
+U048,33,Other,United Kingdom,iOS
+U049,64,Female,United Kingdom,Web
+U050,26,Male,Netherlands,Web
+U051,28,Female,Sweden,Web
+U052,45,Male,Norway,Web
+U053,62,Male,South Africa,Android
+U054,60,Other,Italy,Android
+U055,51,Female,Australia,iOS
+U056,32,Male,Spain,iOS
+U057,55,Other,France,Web
+U058,32,Male,United Kingdom,Web
+U059,58,Male,France,iOS
+U060,20,Female,United Kingdom,Web
+U061,33,Female,Netherlands,iOS
+U062,52,Male,Denmark,Web
+U063,48,Male,Netherlands,Android
+U064,30,Male,Australia,Web
+U065,45,Female,China,Android
+U066,47,Other,Canada,Web
+U067,59,Other,Australia,iOS
+U068,43,Other,Spain,iOS
+U069,33,Male,Brazil,Web
+U070,46,Male,China,iOS
+U071,35,Female,France,iOS
+U072,46,Other,Australia,iOS
+U073,59,Other,United States,iOS
+U074,33,Male,China,Android
+U075,48,Male,Mexico,iOS
+U076,28,Female,United States,Android
+U077,34,Female,South Africa,Android
+U078,62,Other,Norway,Web
+U079,63,Female,Germany,iOS
+U080,36,Male,Canada,Web
+U081,65,Other,Canada,Web
+U082,38,Male,Canada,Web
+U083,48,Other,Sweden,iOS
+U084,21,Other,United Kingdom,iOS
+U085,22,Other,United Kingdom,Web
+U086,33,Female,Australia,Web
+U087,33,Other,Finland,iOS
+U088,57,Male,China,Web
+U089,55,Other,Sweden,Android
+U090,34,Male,Spain,iOS
+U091,34,Female,Germany,Web
+U092,59,Female,Russia,Android
+U093,22,Male,Russia,Web
+U094,54,Male,United Kingdom,Web
+U095,31,Other,Japan,iOS
+U096,40,Male,France,Android
+U097,36,Male,Russia,Web
+U098,63,Female,Finland,Web
+U099,51,Male,Norway,Android
+U100,60,Male,Germany,Android
